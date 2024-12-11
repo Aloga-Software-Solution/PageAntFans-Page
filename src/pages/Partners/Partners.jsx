@@ -1,65 +1,59 @@
+import ReactPlayer from 'react-player';
 import './Partners.css';
-
+import { Link } from 'react-router-dom'
 import backgroundPartners from '../../assets/Videos/Partners.webm';
-import VideoCrystalSparks from '../../assets/Videos/Crystal-sparks-wallpaper.webm';
+import videoCrystalSparks from '../../assets/Videos/Crystal-sparks-wallpaper.webm';
 import imgPartners from '../../assets/Images/imagen-partners.webp';
 import imgLaptopPartners from '../../assets/Images/laptop.webp';
 
 function Partners() {
-
     return (
         <section className="partners">
-            <nav className="partners__header-footer">
-                <video autoPlay loop muted playsInline preload="auto" src={backgroundPartners} className="partners__background-video"></video>
-                <div className="partners__overlay-banner">
-                    <div className="partners__header-content">
-                        <h1 className="partners__title">PARTNERS</h1>
-                        <div className="partners__overlay-content">
-                            <p className="partners__p-initial">
-                                Pageant systems, designers, photographers, glam teams, coaches,
-                                trainers subscribe to PageantFans to create opportunity for or to
-                                connect with beauty queens and titleholders around the world.
-                            </p>
-                        </div>
-                    </div>
+            <div className="partners__header">
+                <ReactPlayer playing={true} loop={true} muted preload='auto' url={backgroundPartners} height={800} width={'100%'} className='partners__background-video'></ReactPlayer>
+                <div className="partners--gradient"></div>
+                <div className="partners__container-text">
+                    <h1 className="container-text--title">PARTNERS</h1>
+                    <p className="container-text--paragraph">Pageant systems, designers, photographers, glam teams, coaches, trainers subscribe to PageantFans to create opportunity for or to connect with beauty queens and titleholders around the world.</p>
                 </div>
-                <button className="next-button-lefth">
-                    <box-icon name='chevron-left' type='solid' color='#ffffff'></box-icon>
-                </button>
-            </nav>
+            </div>
+
             <div className="partners__separator"></div>
-            <div className="partners__hero">
-                <video autoPlay loop muted playsInline preload="auto" src={VideoCrystalSparks}></video>
-                <div className="partners__cards">
-                    <img className="partners__image-first" src={imgPartners} alt="Partners Image" />
-                    <div>
-                        <h2 className="partners__cards-title">Pageant Systems</h2>
-                        <p className="partners__cards-text">
-                            PageantFans is fast becoming a powerful revenue generator for pageant
-                            systems of all sizes, everywhere. Find out what your potential earnings
-                            are and start working with us today!
-                        </p>
-                        <br />
-                        <div className="partners__button-system">
-                            <button className="button-1">Learn More</button>
+
+            <div className="partners__body">
+                <ReactPlayer className="partners__body__video" playing={true} loop={true} muted preload='auto' url={videoCrystalSparks} height={0} ></ReactPlayer>
+                <div className="partner__rows">
+                    <div className="partner__row">
+                        <div className="row__container-image">
+                            <img className="container-image__image" src={imgPartners} alt="Partners Image" />
+                        </div>
+                        <div className="row_container-text">
+                            <h2 className="container-text__cards-title">Pageant Systems</h2>
+                            <p className="container-text__cards-text">PageantFans is fast becoming a powerful revenue generator for pageant systems of all sizes, everywhere. Find out what your potential earnings are and start working with us today!</p>
+                            <div className="container-text__container-button">
+                                <Link to='/joinus'>
+                                    <button className="button__global--red">Learn More</button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="partners__cards">
-                    <div className="partners__text-cards-partners">
-                        <h2 className="partners__cards-title">Investors</h2>
-                        <p className="partners__cards-text">
-                            Founder-funded PageantFans is set to scale significantly, and is only
-                            now allowing accredited investors the opportunity to participate. If
-                            you're interested in investing in unicorns, let's talk.
-                        </p>
-                        <br />
-                        <div className="partners__button-system">
-                            <button className="button-1">Inquire</button>
+                    <div className="partner__row">
+                        <div className="row_container-text">
+                            <h2 className="container-text__cards-title">Investors</h2>
+                            <p className="container-text__cards-text">
+                                Founder-funded PageantFans is set to scale significantly, and is only
+                                now allowing accredited investors the opportunity to participate. If
+                                you're interested in investing in unicorns, let's talk.
+                            </p>
+                            <div className="container-text__container-button">
+                                <Link to='/joinus'>
+                                    <button className="button__global--red">Inquire</button>
+                                </Link>
+                            </div>
                         </div>
-                    </div><br />
-                    <div className="partners__content-image">
-                        <img className="partners__image-second" src={imgLaptopPartners} alt="Laptop Image" />
+                        <div className="row__container-image">
+                            <img className="container-image__image" src={imgLaptopPartners} alt='' />
+                        </div>
                     </div>
                 </div>
             </div>

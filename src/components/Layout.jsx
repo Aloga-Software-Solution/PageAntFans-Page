@@ -1,15 +1,18 @@
 // import { Outlet } from "react-router-dom"
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Footer from './Footer';
 import Header from './Header';
 
 const Layout = ({ children }) => {
+  const location = useLocation();  
+  const isJoinUsPage = location.pathname === '/joinus';
+
   return (
     <div>
-      <Header />
-      <main>{children}
-      </main>
-      <Footer />
+      {!isJoinUsPage && <Header />}
+      <main>{children}</main>
+      {!isJoinUsPage && <Footer />}
     </div>
   );
 };

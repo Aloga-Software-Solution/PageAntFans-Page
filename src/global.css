@@ -550,6 +550,17 @@ header {
   }
 }
 
+@media only screen and (max-width: 700px) {
+  .next-button-left {
+    top: 280px;
+    left: 20px;
+  }
+  .next-button-right {
+    top: 280px;
+    right: 20px;
+  }
+}
+
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:801px) {
 
