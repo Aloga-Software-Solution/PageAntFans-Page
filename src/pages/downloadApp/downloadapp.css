@@ -1,0 +1,870 @@
+/* --------------------------Start of AppDownload styles.-------------------------- */
+
+.download--app__video {
+    height: 550px;
+}
+
+.download--app__content {
+    text-align: center;
+}
+
+.download--app__content--title {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.download--app__content--grid {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+    grid-auto-rows: minmax(35px, auto);
+}
+
+.download--app__content--content {
+    padding-top: 20px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    color: #545f71;
+    margin-bottom: 20px;
+}
+
+.download--app__content--subtitle {
+    color: #545f71;
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.download--app__content--description {
+    width: 100%;
+    color: #545f71;
+    margin-bottom: 30px;
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+}
+
+.download--app__content--phone {
+    text-align: center;
+    width: 300px;
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+
+.download--app__content--phone--video {
+    position: absolute;
+    object-fit: contain;
+    clip-path: inset(9px 29px 10px 27px round 40px);
+}
+
+.download--app__diagonal {
+    width: 100%;
+    background: #fdece6;
+    padding: 60px 0px;
+    clip-path: polygon(0% 0%, 100% 40px, 100% 100%, 0% 100%);
+    overflow: visible;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+    grid-gap: 50px;
+    grid-auto-rows: minmax(35px, auto);
+}
+
+.download--app__video__two--video {
+    width: 250px;
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+}
+
+.download--app__text {
+    width: 75%;
+    gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.download--app__text--title {
+    text-align: left;
+    color: #545f71;
+    font-size: 24px;
+}
+
+.download--app__text--description {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #545f71;
+    text-align: left;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.download--app__stories {
+    margin: 46px 0px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+    grid-auto-rows: minmax(35px, auto);
+}
+
+.download--app__stories__content {
+    width: 75%;
+    gap: 20px;
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+
+.download--app__stories__content--title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #545f71;
+    text-align: left;
+    flex-direction: column;
+}
+
+.download--app__stories__content--description {
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
+    width: 100%;
+    margin-top: 3%;
+    text-align: left;
+    color: #545f71;
+    flex-direction: column;
+}
+
+.download--app__stories-image {
+    display: flex;
+    width: 75%;
+}
+
+.download--app__exclusive {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+.download--app__exclusive--image {
+    display: flex;
+    width: 75%;
+    margin-top: 15%;
+}
+
+.download--app__exclusive--description {
+    width: 75%;
+    padding: 15px;
+    height: auto;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #545f71;
+}
+
+.download--app__features {
+    margin: 24px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+    grid-gap: 50px;
+    gap: 20px;
+    grid-auto-rows: minmax(35px, auto);
+    align-items: center;
+    justify-items: center
+}
+
+.download--app__card {
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 68px 20px;
+    text-align: center;
+    box-shadow: rgb(149 157 165 / 42%) 0px 8px 24px
+}
+
+.download--app__card--icon {
+    width: '105px';
+    height: '105px';
+}
+
+.download--app__card--QR {
+    margin-top: 20px;
+    width: 105px;
+}
+
+.download--app__card--tittle {
+    color: rgb(77, 77, 77);
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.download--app__card--subtitle {
+    color: rgb(172, 172, 172);
+    text-align: center;
+    line-height: 150%;
+}
+
+/* --------------------------Responsive.-------------------------- */
+
+/* Smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width:320px) {
+    .download--app__content {
+        margin: 24px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 24px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 18px;
+    }
+
+    .download--app__content--description {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 24px 0px;
+    }
+
+    .download--app__video__two {
+        order: 2;
+    }
+
+    .download--app__text {
+        order: 1;
+        width: 100%;
+        align-items: center;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 16px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 24px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 16px;
+    }
+
+    .download--app__exclusive--image {
+        order: 2;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 1;
+        font-size: 18px;
+    }
+}
+
+/* Smartphones, Android phones, landscape iPhone */
+@media (min-width:480px) {
+    .download--app__content {
+        margin: 34px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 32px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 20px;
+    }
+
+    .download--app__content--description {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 24px 0px;
+    }
+
+    .download--app__video__two {
+        order: 2;
+    }
+
+    .download--app__text {
+        order: 1;
+        width: 100%;
+        align-items: center;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 32px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 17px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 32px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 17px;
+    }
+
+    .download--app__exclusive--image {
+        order: 2;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 1;
+        font-size: 20px;
+    }
+}
+
+/* Portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:600px) {
+    .download--app__content {
+        margin: 34px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 36px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 24px;
+    }
+
+    .download--app__content--description {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 24px 0px;
+    }
+
+    .download--app__video__two {
+        order: 2;
+    }
+
+    .download--app__text {
+        order: 1;
+        width: 100%;
+        align-items: center;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 18px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 36px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 18px;
+    }
+
+    .download--app__exclusive--image {
+        order: 2;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 1;
+        font-size: 24px;
+    }
+
+    .download--app__stories-image{
+        width: 100%;
+    }
+}
+
+/* Tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:801px) {
+    .download--app__content {
+        margin: 64px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 40px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 28px;
+    }
+
+    .download--app__content--description {
+        font-size: 19px;
+        line-height: 1.5;
+    }
+
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 24px 50px;
+    }
+
+    .download--app__video__two {
+        order: 1;
+    }
+
+    .download--app__text {
+        order: 2;
+        width: 100%;
+        align-items: center;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 40px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 19px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 40px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 19px;
+    }
+
+    .download--app__exclusive--image {
+        order: 1;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 2;
+        font-size: 28px;
+    }
+}
+
+/* Big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+    .download--app__content {
+        margin: 64px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 44px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 30px;
+    }
+
+    .download--app__content--description {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 24px 200px;
+    }
+
+    .download--app__video__two {
+        order: 1;
+    }
+
+    .download--app__text {
+        order: 2;
+        width: 80%;
+        align-items: center;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 44px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 44px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 20px;
+    }
+
+    .download--app__exclusive--image {
+        order: 1;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 2;
+        font-size: 30px;
+    }
+
+    .download--app__stories {
+        margin: 46px 35px;
+    }
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+    .download--app__content {
+        margin: 64px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 46px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 31px;
+    }
+
+    .download--app__content--description {
+        font-size: 21px;
+        line-height: 1.5;
+    }
+    
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 24px 300px;
+    }
+
+    .download--app__video__two {
+        order: 1;
+    }
+
+    .download--app__text {
+        order: 2;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 46px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 21px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 46px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 21px;
+    }
+
+    .download--app__exclusive--image {
+        order: 1;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 2;
+        font-size: 31px;
+    }
+
+    .download--app__stories {
+        margin: 46px 50px;
+    }
+}
+
+/* Large desktops (1920px and above) */
+@media (min-width: 1920px) {
+    .download--app__content {
+        margin: 64px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 48px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 32px;
+    }
+
+    .download--app__content--description {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+        
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 24px 450px;
+    }
+
+    .download--app__video__two {
+        order: 1;
+    }
+
+    .download--app__text {
+        order: 2;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 22px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 48px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 22px;
+    }
+
+    .download--app__exclusive--image {
+        order: 1;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 2;
+        font-size: 32px;
+    }
+
+    .download--app__stories {
+        margin: 36px 200px;
+    }
+}
+
+/* Ultra-wide desktops (2560px and above) */
+@media (min-width: 2560px) {
+    .download--app__content {
+        margin: 64px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 56px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 40px;
+    }
+
+    .download--app__content--description {
+        font-size: 23px;
+        line-height: 1.5;
+    }
+            
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 60px 600px;
+    }
+
+    .download--app__video__two {
+        order: 1;
+    }
+
+    .download--app__text {
+        order: 2;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 56px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 23px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 56px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 23px;
+    }
+
+    .download--app__exclusive--image {
+        order: 1;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 2;
+        font-size: 40px;
+    }
+
+    .download--app__stories {
+        margin: 60px 250px;
+    }
+}
+
+/* 4K screens (3840px and above) */
+@media (min-width: 3840px) {
+    .download--app__content {
+        margin: 64px 0px;
+    }
+
+    .download--app__content--title {
+        font-size: 72px;
+    }
+
+    .download--app__content--subtitle {
+        font-size: 48px;
+    }
+
+    .download--app__content--description {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+               
+    .download--app__diagonal {
+        grid-gap: 0px;
+    }
+
+    .download--app__content--grid {
+        margin: 60px 1000px;
+    }
+
+    .download--app__video__two {
+        order: 1;
+    }
+
+    .download--app__text {
+        order: 2;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .download--app__text--title {
+        align-items: center;
+        width: 75%;
+        font-size: 72px;
+        margin-bottom: 24px;
+    }
+
+    .download--app__text--description {
+        align-items: center;
+        width: 75%;
+        font-size: 24px;
+    }
+
+    .download--app__stories__content--title {
+        font-size: 72px;
+    }
+
+    .download--app__stories__content--description {
+        font-size: 24px;
+    }
+
+    .download--app__exclusive--image {
+        order: 1;
+        margin: 24px 0px;
+    }
+
+    .download--app__exclusive--description {
+        order: 2;
+        font-size: 48px;
+    }
+
+    .download--app__stories {
+        margin: 60px 350px;
+    }
+}

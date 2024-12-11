@@ -1,0 +1,354 @@
+.opening--main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 800px; 
+}
+
+.opening--main video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; 
+}
+
+.opening--main__content--paragraph {
+  font-size: 24px; 
+  color: aliceblue;
+  margin: 10px 0;
+  z-index: 2;
+}
+
+.opening--main__content {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+
+
+.opening--separator {
+  position: absolute;
+  top: 650px;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.04) 100%);
+}
+
+.opening--hero {
+  padding: 100px 0px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.opening--hero__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.opening--hero__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.opening--hero__top--text--h2 {
+  padding-bottom: 10%;
+  text-align: center;
+  color: white;
+}
+
+.opening--carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.opening--carousel__inner {
+  display: flex;
+  animation: scroll 25s linear infinite;
+  width: calc(100%* 2);
+}
+
+.opening--carousel__video--item {
+  flex: 0 0 auto;
+  margin: 0 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.opening--text {
+  padding-top: 5%;
+}
+
+.opening--text h3 {
+  font-size: 32px;
+  color: white;
+}
+
+.opening--cards--Data {
+  margin: 80px 0px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+  grid-gap: 50px;
+  grid-auto-rows: minmax(35px, auto);
+}
+
+.opening--cards__text--cards {
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.opening--cards__text--h2 {
+    font-size: 48px;
+    text-align: center;
+    color: white;
+}
+
+.opening--cards__video--container {
+  padding-right: 4%;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.opening--cards__video--container--img {
+  width: 80%;
+  height: auto;
+}
+
+.opening--cards__video--queens {
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opening--cards__img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.opening--cards--Data__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.opening--cards--Data__content--img {
+  width: 720px;
+}
+
+@media (min-width:320px) {
+  .opening--text h3 {
+    font-size: 18px;
+    padding: 20px 25px;
+  }
+
+  .opening--cards--Data {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 90px 0px;
+  }
+
+  .opening--cards__text--h2 {
+    font-size: 1.6rem;
+    padding: 0px 25px;
+  }
+
+  .opening--cards--Data__content--img {
+    width: 315px;
+  }
+
+}
+
+@media (min-width:480px) {
+  .opening--hero__top--text--h2 {
+    padding: 0px 70px
+  }
+
+  .opening--cards--Data {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 90px 0px;
+  }
+
+  .opening--text h3 {
+    font-size: 18px;
+    padding: 20px 35px
+  }
+
+  .opening--cards__text--h2 {
+    font-size: 1.6rem;
+    padding: 0px 35px
+  }
+  
+  .opening--cards--Data__content--img {
+    width: 450px;
+  }
+
+}
+
+@media (min-width:600px) {
+  .opening--hero__top--text--h2 {
+    font-size: 26px;
+    padding: 0px 120px;
+    margin-bottom: 50px;
+  }
+
+  .opening--cards--Data {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    margin: 90px 0px;
+  }
+  
+  .opening--cards__text--h2 {
+    font-size: 26px;
+    padding: 0px 35px
+  }
+
+  .opening--cards--Data__content--img {
+    width: 510px;
+  }
+  
+}
+
+@media (min-width:801px) {
+
+  .opening--hero__top--text--h2 {
+    font-size: 30px;
+    padding: 0px 200px;
+    margin-bottom: 50px;
+  }
+
+  .opening--cards--Data {
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    margin: 90px 0px;
+  }
+
+  .opening--text h3 {
+    font-size: 18px;
+    padding: 20px 35px
+  }
+
+  .opening--cards__text--h2 {
+    font-size: 35px;
+    padding: 0px 35px
+  }
+
+  .opening--cards--Data__content--img {
+    width: 700px;
+  }
+
+}
+
+@media (min-width:1025px) {
+  .opening--hero__top--text--h2 {
+    font-size: 40px;
+    padding: 0px 200px;
+    margin-bottom: 50px;
+  }
+
+  .opening--cards--Data {
+    grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
+    margin: 90px 0px;
+  }
+
+  .opening--text h3 {
+    font-size: 25px;
+    padding: 20px 70px
+  }
+
+  .opening--cards__text--h2 {
+    font-size: 40px;
+    padding: 0px 40px
+  }
+
+  .opening--cards--Data__content--img {
+    width: 800px;
+  }
+
+}
+
+@media (min-width:1281px) {
+  .opening--hero__top--text--h2 {
+    font-size: 48px;
+    padding: 0px 350px;
+    margin-bottom: 50px;
+  }
+
+  .opening--cards--Data {
+    margin: 90px 0px;
+  }
+
+  .opening--text h3 {
+  font-size: 32px;
+  padding: 20px 90px;
+  }
+  
+  .opening--cards__text--h2 {
+    font-size: 48px;
+    padding: 0px 40px
+  }
+
+  .opening--cards--Data__content--img {
+    width: 580px;
+  }
+}
+
+@media(max-width:600px) {
+  .opening--main__content--paragraph {
+    font-size: 18px;
+  }
+}
+
+@media(max-width:440px) {
+  .opening--main__content--paragraph {
+    font-size: 14px;
+  }
+}
+
+@media(max-width:380px) {
+  .opening--main__content--paragraph {
+    font-size: 12px;
+  }
+}
+
+@media (min-width:1000px) {
+  .opening--main video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
