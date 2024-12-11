@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 import LogoFans from '../assets/Images/fanslogo.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faXTwitter, faYoutube, faSnapchat, faSquareSnapchat} from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faXTwitter, faYoutube, faSnapchat, faSquareSnapchat } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
     return (
@@ -15,34 +16,26 @@ function Footer() {
                             <FontAwesomeIcon icon={faFacebookF} className="icon__footer--user" />
                         </a>
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faInstagram} className="icon__footer--user" />
+                            <FontAwesomeIcon icon={faInstagram} className="icon__footer--user" />
                         </a>
                         <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faXTwitter} className="icon__footer--user" />
+                            <FontAwesomeIcon icon={faXTwitter} className="icon__footer--user" />
                         </a>
                         <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faYoutube} className="icon__footer--user" />
+                            <FontAwesomeIcon icon={faYoutube} className="icon__footer--user" />
                         </a>
                         <a href="https://www.snapchat.com/" target="_blank" rel="noopener noreferrer">
-                        <FontAwesomeIcon icon={faSnapchat} className="icon__footer--user" />
+                            <FontAwesomeIcon icon={faSnapchat} className="icon__footer--user" />
                         </a>
                     </div>
                 </div>
 
                 <div className="links">
                     <div className="footer-links">
-                        <a href="/about" id="aboutusf">
-                            About Us
-                        </a>
-                        <a href="/download" id="downloadf">
-                            Download
-                        </a>
-                        <a href="/subscribers" id="subscriptionsf">
-                            Subscribers
-                        </a>
-                        <a href="/news" id="newsf">
-                            News
-                        </a>
+                        <Link data-item="About Us" to="/about">About Us</Link>
+                        <Link data-item="Download" to="/download">Download</Link>
+                        <Link data-item="Subscribers" to="/subscribers">Subscribers</Link>
+                        <Link data-item="News" to="/news">News</Link>
                     </div>
                 </div>
 

@@ -38,75 +38,49 @@
 }
 
 .download__content {
-    background-color: #ffffff59;
-    width: 60%;
-    display: flex;
-    padding: 3%;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    width: 75%;
+    padding: 30px 0px;
     border-radius: 20px;
-    height: 700px;
+    background-color: #ffffff59;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: minmax(35px, auto);
 }
 
 .download__phone {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
+    width: auto;
 }
 
 .download__phone--img {
-    width: 150%;
-    margin-left: 0;
-    margin-right: -100%;
-    margin-top: -350px;
+    width: 75%;
+    text-align: center;
 }
 
 .download__content__text {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+    width: 75%;
+    margin: 30px 0px;
+    overflow: hidden;
 }
 
-.download__QR {
-    display: flex;
-    margin-top: 200px;
-}
 
 .download__QR--img {
-    width: 110%;
-    height: 110%;
-    margin-top: 90px;
-    margin-left: -55%;
-}
-
-.download__content__QR {
-    width: 150%;
-    margin-right: 100%;
+    width: 40%
 }
 
 .download__content__QR--text {
     color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
-        sans-serif;
     text-align: left;
-    font-size: 10px;
-    line-height: 1.5;
-    margin-top: 24px;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 24px 0px;
 }
 
 .download__button {
-    padding-top: 2%;
-    margin-right: 100%;
-    margin-bottom: 24px;
+    margin-top: 2%;
 }
-
 
 .download__button--button {
     border: none;
@@ -126,32 +100,140 @@
     animation: download__button-hover 0.9s linear both;
 }
 
-@keyframes download__button--button-hover {
-    0% {
-        transform: scale3d(1, 1, 1);
+
+/* --------------------------Responsive.-------------------------- */
+
+/* Smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width:320px) {
+    .download__header--title {
+        font-size: 48px;
     }
 
-    30% {
-        transform: scale3d(0.75, 1.25, 1);
+    .download__content__QR--text {
+        font-size: 16px;
     }
 
-    40% {
-        transform: scale3d(1.25, 0.75, 1);
+    .download__content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
-    50% {
-        transform: scale3d(0.85, 1.15, 1);
+    .download__QR {
+        display: none;
+    }
+}
+
+/* Smartphones, Android phones, landscape iPhone */
+@media (min-width:480px) {
+    .download__header--title {
+        font-size: 60px;
     }
 
-    65% {
-        transform: scale3d(1.05, 0.95, 1);
+    .download__content__QR--text {
+        font-size: 17px;
     }
 
-    75% {
-        transform: scale3d(0.95, 1.05, 1);
+    .download__QR {
+        display: none;
+    }
+}
+
+/* Portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:600px) {
+    .download__header--title {
+        font-size: 72px;
     }
 
-    100% {
-        transform: scale3d(1, 1, 1);
+    .download__content__QR--text {
+        font-size: 18px;
+    }
+
+}
+
+/* Tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:801px) {
+    .download__header--title {
+        font-size: 84px;
+    }
+
+    .download__content__QR--text {
+        font-size: 19px;
+    }
+
+
+
+    .download__content {
+        margin: 0px 20%;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .download__phone--img {
+        width: 90%;
+    }
+}
+
+/* Big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+    .download__header--title {
+        font-size: 96px;
+    }
+
+    .download__content__QR--text {
+        font-size: 20px;
+    }
+
+    .download__QR {
+        display: block;
+    }
+
+    .download__QR--img {
+        width: 60%;
+    }
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+    .download__header--title {
+        font-size: 108px;
+    }
+
+    .download__content__QR--text {
+        font-size: 21px;
+    }
+
+    .download__QR--img {
+        width: 40%;
+    }
+}
+
+/* Large desktops (1920px and above) */
+@media (min-width: 1920px) {
+    .download__header--title {
+        font-size: 120px;
+    }
+
+    .download__content__QR--text {
+        font-size: 22px;
+    }
+}
+
+/* Ultra-wide desktops (2560px and above) */
+@media (min-width: 2560px) {
+    .download__header--title {
+        font-size: 144px;
+    }
+
+    .download__content__QR--text {
+        font-size: 23px;
+    }
+}
+
+/* 4K screens (3840px and above) */
+@media (min-width: 3840px) {
+    .download__header--title {
+        font-size: 180px;
+    }
+
+    .download__content__QR--text {
+        font-size: 24px;
     }
 }
