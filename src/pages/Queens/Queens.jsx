@@ -25,17 +25,17 @@ function Queens() {
     return (
         <section className='queens'>
             <div className='queens--banner'>
-                <ReactPlayer playing={true} loop={true} muted preload='auto' url={QueensBanner} height={800} width={'100%'} className='queens--banner__video'></ReactPlayer>
+                <ReactPlayer playing={true} loop={true} muted playsinline preload='auto' url={QueensBanner} height={800} width={'100%'} className='queens--banner__video'></ReactPlayer>
                 <div className='queens--banner__content'>
                     <div className='queens--banner__header'>
-                        <h1 className='queens--banner__title'>QUEENS</h1>
+                        <h1 className='queens--banner__header--title'>QUEENS</h1>
                         <div className='queens--banner__description'>
-                            <p className='queens--banner__text'>
+                            <p className='queens--banner__description--text'>
                                 Share exclusive content with your fans. Invite them to support your pageant journey with likes, shares and donations.
                             </p>
                         </div>
                         <div className='queens--banner__actions'>
-                            <Link to='/joinus'><button className='queens--banner__button'>Sign Up</button></Link>
+                            <Link to='/joinus'><button className='queens--banner__actions--button'>Sign Up</button></Link>
                         </div>
                     </div>
                 </div>
@@ -43,18 +43,16 @@ function Queens() {
             <div className='queens--separator'></div>
             <div className='queens--hero'>
                 <ReactPlayer className='queens--hero__video' playing={true} loop={true} muted preload='auto' url={QueensHero} height={0}></ReactPlayer>
-                <div className='queens--hero__top--text'>
-                    <h2 className='queens--hero__top--text--subtitle'>Turn fans into super fans, friends and pageant family</h2>
+                <div className='queens--hero__top'>
+                    <h2 className='queens--hero__top--title'>Turn fans into super fans, friends and pageant family</h2>
                 </div>
-                <div>
-                    <div className='queens--carousel'>
-                        <div className='queens--carousel__inner' id='carouselInner'>
-                            {Array(3).fill(videoData).flat().map((video, index) => (
-                                <div key={index} className={`queens--carousel__video--item ${video.className}`}>
-                                    <ReactPlayer playing={true} loop={true} muted preload='auto' url={video.url} style={{ objectFit: 'cover' }} width='100%' height='100%' />
-                                </div>
-                            ))}
-                        </div>
+                <div className='queens--carousel'>
+                    <div className='queens--carousel__inner' id='carouselInner'>
+                        {Array(3).fill(videoData).flat().map((video, index) => (
+                            <div key={index} className={`queens--carousel__video--item ${video.className}`}>
+                                <ReactPlayer playing={true} loop={true} muted preload='auto' url={video.url} style={{ objectFit: 'cover' }} width='100%' height='100%' />
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className='queens--text'>
@@ -66,10 +64,10 @@ function Queens() {
                     <div className='queens--cards__text'>
                         <h2 className='queens--cards__text--subtitle'>Build a community of supporters all one place</h2>
                     </div>
-                    <div className='queens--cards__container--video'>
-                        <img className='queens--cards__container--video--img' src={QueensMovilBackground} alt='' />
-                        <div className='queens--cards__container--video--queens'>
-                            <ReactPlayer className='queens--cards__container--video--queens--img' playing={true} loop={true} muted preload='auto' url={QueensMovilVideo}></ReactPlayer>
+                    <div className='queens--cards__container__video'>
+                        <img className='queens--cards__container__video--img' src={QueensMovilBackground} alt='' />
+                        <div className='queens--cards__queens'>
+                            <ReactPlayer className='queens--cards__queens--video' playing={true} loop={true} muted preload='auto' url={QueensMovilVideo}></ReactPlayer>
                         </div>
                     </div>
                 </div>
@@ -77,7 +75,7 @@ function Queens() {
                     <div className='queens--cards__container'>
                         <img className='queens--cards__container--img' src={QueensImg} alt='' />
                     </div>
-                    <div className='queens--cards__text'>
+                    <div className='queens--cards__texts'>
                         <h2 className='queens--cards__text--subtitle'>Give sneak peeks and previews you would never share publicly</h2>
                     </div>
                 </div>

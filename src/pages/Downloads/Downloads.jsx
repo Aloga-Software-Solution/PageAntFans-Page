@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 function Download() {
     return (
         <section className='download'>
-            <ReactPlayer playing={true} loop={true} muted preload='auto' url={backgroundStarts} className="download__video"></ReactPlayer>
+            <ReactPlayer playing={true} loop={true} playsinline muted preload='auto' url={backgroundStarts} className="download__video"></ReactPlayer>
             <div className='download__header'>
                 <h1 className='download__header--title'>Download</h1>
             </div>

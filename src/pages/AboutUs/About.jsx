@@ -12,7 +12,7 @@ function About() {
   return (
     <section className="about">
       <div className="about--banner">
-        <ReactPlayer className="about--banner__video" playing={true} url={AboutBanner} muted loop={true} height={800} width={"100%"} />
+        <ReactPlayer className="about--banner__video" playing={true} playsinline url={AboutBanner} muted loop={true} height={800} width={"100%"} />
         <div className="about--banner__overlay">
           <div className="about--banner__content">
             <h1 className='about--banner__content--title'>ABOUT US</h1>
@@ -21,7 +21,7 @@ function About() {
       </div>
       <div className="about--separator"></div>
       <div className="about--content">
-        <ReactPlayer className="about--content__video" playing={true} url={AboutHero} muted loop={true} height={0} />
+        <ReactPlayer className="about--content__video" playing={true} playsinline url={AboutHero} muted loop={true} height={0} />
         <div className="about--information">
           <div className="about--information__description">
             <h2 className="about--information__description--title">Pageants</h2>
@@ -32,7 +32,7 @@ function About() {
           <div className="about--ceo">
             <div className="about--ceo__content">
               <img src={AboutThom} className='about--ceo__content--img' />
-              <ReactPlayer className="about--ceo__content--video" playing={true} url={AboutCards} muted loop={true} height={0} />
+              <ReactPlayer className="about--ceo__content--video" playing={true} playsinline url={AboutCards} muted loop={true} height={0} />
               <div className="about--content__ceo">
                 <h2 className="about--content__ceo--name">Thom Brodeur</h2>
                 <h3 className="about--content__ceo--subtitle">Founder & CEO</h3>
@@ -42,7 +42,7 @@ function About() {
           </div>
           <div className="about--ceo">
             <div className="about--ceo__content">
-              <ReactPlayer className="about--ceo__content--video" playing={true} url={AboutCards} muted loop={true} height={0} />
+              <ReactPlayer className="about--ceo__content--video" playing={true} playsinline url={AboutCards} muted loop={true} height={0} />
               <div className="about--content__ceo">
                 <h2 className="about--content__ceo--name">Lance Goodman</h2>
                 <h3 className="about--content__ceo--subtitle">Co-Founder</h3>

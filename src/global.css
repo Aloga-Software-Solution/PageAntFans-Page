@@ -31,6 +31,16 @@ body {
   margin: 0;
 }
 
+body.joinus-page {
+  background-color: #FFFFFF; 
+  min-height: 100vh;
+}
+
+.joinus-page {
+  min-height: 100vh; 
+  background-color: #ffffff;
+}
+
 video {
   top: 0;
   left: 0;

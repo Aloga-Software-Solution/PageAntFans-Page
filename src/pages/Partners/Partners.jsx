@@ -10,7 +10,7 @@ function Partners() {
     return (
         <section className="partners">
             <div className="partners__header">
-                <ReactPlayer playing={true} loop={true} muted preload='auto' url={backgroundPartners} height={800} width={'100%'} className='partners__background-video'></ReactPlayer>
+                <ReactPlayer playing={true} loop={true} muted playsinline preload='auto' url={backgroundPartners} height={800} width={'100%'} className='partners__background-video'></ReactPlayer>
                 <div className="partners--gradient"></div>
                 <div className="partners__container-text">
                     <h1 className="container-text--title">PARTNERS</h1>
@@ -21,7 +21,7 @@ function Partners() {
             <div className="partners__separator"></div>
 
             <div className="partners__body">
-                <ReactPlayer className="partners__body__video" playing={true} loop={true} muted preload='auto' url={videoCrystalSparks} height={0} ></ReactPlayer>
+                <ReactPlayer className="partners__body__video" playsinline playing={true} loop={true} muted preload='auto' url={videoCrystalSparks} height={0} ></ReactPlayer>
                 <div className="partner__rows">
                     <div className="partner__row">
                         <div className="row__container-image">

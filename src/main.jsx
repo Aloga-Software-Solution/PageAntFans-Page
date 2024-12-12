@@ -3,6 +3,7 @@ import 'boxicons';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
+import ScrollToTop from './components/Scroll';
 import About from './pages/AboutUs/About';
 import Download from './pages/Downloads/Downloads';
 import Fans from './pages/Fans/Fans';
@@ -23,6 +24,7 @@ const App = () => {
                 v7_startTransition: true
             }}>
             <Layout>
+                <ScrollToTop />
                 <Routes>
                     {/* <Route path="/" element={<Layout />} /> */}
                     <Route path="/" element={<Home />} />

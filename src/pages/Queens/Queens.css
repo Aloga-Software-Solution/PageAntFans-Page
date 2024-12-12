@@ -1,6 +1,6 @@
 /* --------------------------Start of Queens styles.-------------------------- */
 
-.queens--banner__video video{
+.queens--banner__video{
     object-fit: cover;
 }
 
@@ -22,20 +22,20 @@
     padding: 350px 33% 350px 24%;
 }
 
-.queens--banner__title {
+.queens--banner__header--title {
     color: white;
     font-size: 120px;
     font-weight: 500;
     font-family: "Abhaya Libre", serif;
 }
 
-.queens--banner__text {
+.queens--banner__description--text {
     color: white;
     margin-bottom: 25px;
     font-size: 22px;
 }
 
-.queens--banner__button{
+.queens--banner__actions--button{
     border: none;
     border-radius: 20px;
     padding: 10px 12px;
@@ -46,11 +46,11 @@
     transition: background-color 0.3s;
 }
 
-.queens--banner__button:hover {
+.queens--banner__actions--button:hover {
     background-color: white;
     color: #E30426;
     backdrop-filter: blur(5px);
-    animation: queens--banner__button .9s linear both;
+    animation: queens--banner__actions--button .9s linear both;
 }
 
 .queens--separator {
@@ -69,7 +69,7 @@
     overflow: hidden;
 }
 
-.queens--hero__video video{
+.queens--hero__video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -82,7 +82,7 @@
     object-fit: cover;
 }
 
-.queens--hero__top--text--subtitle {
+.queens--hero__top--title {
     margin: 40px 10px;
     text-align: center;
     color: white;
@@ -136,13 +136,13 @@
     height: 380px;
 }
 
-.queens--text{
+.queens--text {
     display: flex;
     text-align: center;
     justify-content: center;
 }
 
-.queens--text__content{
+.queens--text__content {
     width: 75%;
     text-align: left;
     font-size: 32px;
@@ -166,19 +166,19 @@
     color: white;
 }
 
-.queens--cards__container--video {
+.queens--cards__container__video {
     padding-right: 4%;
     width: 100%;
     position: relative;
     display: inline-block;
 }
 
-.queens--cards__container--video--img {
+.queens--cards__container__video--img {
     width: 75%;
     height: auto;
 }
 
-.queens--cards__container--video--queens {
+.queens--cards__queens {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -189,7 +189,7 @@
     align-items: center;
 }
 
-.queens--cards__container--video--queens--img {
+.queens--cards__queens--video {
     width: 300px !important;
     height: auto !important;
     object-fit: contain;
@@ -197,6 +197,13 @@
 }
 
 .queens--cards__text {
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.queens--cards__texts {
     display: flex;
     overflow: auto;
     align-items: center;
@@ -222,7 +229,7 @@
         padding: 340px 33% 350px 42%;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 48px;
     }
 
@@ -230,7 +237,7 @@
         padding: 20px 0px;
     }
 
-    .queens--hero__top--text--subtitle {
+    .queens--hero__top--title {
         font-size: 24px;
     }
 
@@ -244,7 +251,19 @@
         padding: 55px 25px 20px 25px;
     }
 
-    .queens--cards__container--video--queens--img {
+    .queens--banner__text {
+        font-size: 16px;
+    }
+
+    .queens--cards__container {
+        order: 2;
+    }
+
+    .queens--cards__texts{
+        order: 1;
+    }
+
+    .queens--cards__queens--video {
         width: 140px !important;
         height: auto !important;
         object-fit: contain;
@@ -252,7 +271,7 @@
     }
 
     .queens--cards__text--subtitle {
-        font-size: 1.6rem;
+        font-size: 24px;
         margin: 40px 10px 40px 10px;
     }
 }
@@ -263,18 +282,18 @@
         padding: 340px 33% 350px 42%;
     }
 
-    .queens--hero__top--text--subtitle {
+    .queens--hero__top--title {
         font-size: 32px;
         padding: 0px 70px;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 60px;
     }
 
     .queens--cards {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        margin: 40px 0px  95px 0px;
+        margin: 40px 0px 95px 0px;
     }
 
     .queens--hero {
@@ -286,15 +305,19 @@
         padding: 55px 35px 20px 35px;
     }
 
-    .queens--cards__container--video--queens--img {
+    .queens--cards__queens--video {
         width: 200px !important;
         height: auto !important;
         object-fit: contain;
         clip-path: inset(9px 10px 13px 9px round 30px);
     }
 
+    .queens--banner__text {
+        font-size: 17px;
+    }
+
     .queens--cards__text--subtitle {
-        font-size: 1.6rem;
+        font-size: 32px;
         margin: 40px 35px 40px 35px;
     }
 }
@@ -305,7 +328,7 @@
         padding: 340px 33% 350px 30%;
     }
 
-    .queens--hero__top--text--subtitle {
+    .queens--hero__top--title {
         font-size: 36px;
         padding: 0px 120px;
         margin-bottom: 50px;
@@ -313,10 +336,10 @@
 
     .queens--cards {
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-        margin: 40px 0px  120px 0px;
+        margin: 40px 0px 120px 0px;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 72px;
     }
 
@@ -329,15 +352,19 @@
         padding: 55px 35px 20px 35px;
     }
 
-    .queens--cards__container--video--queens--img {
+    .queens--cards__queens--video {
         width: 235px !important;
         height: auto !important;
         object-fit: contain;
         clip-path: inset(10px 12px 16px 10px round 35px);
     }
 
+    .queens--banner__text {
+        font-size: 18px;
+    }
+
     .queens--cards__text--subtitle {
-        font-size: 26px;
+        font-size: 36px;
         margin: 40px 35px 40px 35px;
     }
 }
@@ -348,19 +375,19 @@
         padding: 340px 33% 350px 30%;
     }
 
-    .queens--hero__top--text--subtitle {
+    .queens--hero__top--title {
         font-size: 40px;
         padding: 0px 200px;
         margin-bottom: 50px;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 84px;
     }
 
     .queens--cards {
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-        margin: 40px 0px  95px 0px;
+        margin: 40px 0px 95px 0px;
     }
 
     .queens--hero {
@@ -372,15 +399,19 @@
         padding: 55px 35px 20px 35px;
     }
 
-    .queens--cards__container--video--queens--img {
+    .queens--cards__queens--video {
         width: 300px !important;
         height: auto !important;
         object-fit: contain;
         clip-path: inset(12px 16px 18px 12px round 47px);
     }
 
+    .queens--banner__text {
+        font-size: 19px;
+    }
+
     .queens--cards__text--subtitle {
-        font-size: 35px;
+        font-size: 40px;
         margin: 40px 35px 40px 35px;
     }
 }
@@ -391,19 +422,19 @@
         padding: 340px 33% 350px 30%;
     }
 
-    .queens--hero__top--text--subtitle {
-        font-size:  44px;
+    .queens--hero__top--title {
+        font-size: 44px;
         padding: 0px 200px;
         margin-bottom: 50px;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 96px;
     }
 
     .queens--cards {
         grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
-        margin: 40px 0px  95px 0px;
+        margin: 40px 0px 95px 0px;
     }
 
     .queens--hero {
@@ -415,15 +446,19 @@
         padding: 55px 70px 20px 70px;
     }
 
-    .queens--cards__container--video--queens--img {
+    .queens--cards__queens--video {
         width: 350px !important;
         height: auto !important;
         object-fit: contain;
         clip-path: inset(15px 17px 20px 18px round 58px);
     }
 
+    .queens--banner__text {
+        font-size: 20px;
+    }
+
     .queens--cards__text--subtitle {
-        font-size: 40px;
+        font-size: 44px;
         margin: 40px;
     }
 }
@@ -434,13 +469,13 @@
         padding: 340px 33% 350px 30%;
     }
 
-    .queens--hero__top--text--subtitle {
+    .queens--hero__top--title {
         font-size: 46px;
         padding: 0px 350px;
         margin-bottom: 50px;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 108px;
     }
 
@@ -448,8 +483,8 @@
         padding: 60px 0px;
     }
 
-    .queens--banner__text {
-        font-size: 16px;
+    .queens--banner__description--text {
+        font-size: 21px;
     }
 
     .queens--text__content {
@@ -462,15 +497,23 @@
         margin: 100px 0px 130px 0px;
     }
 
-    .queens--cards__container--video--queens--img {
-        width: 300px !important; 
+    .queens--cards__container {
+        order: 1;
+    }
+
+    .queens--cards__texts{
+        order: 2;
+    }
+
+    .queens--cards__queens--video {
+        width: 300px !important;
         height: auto !important;
         object-fit: contain;
         clip-path: inset(15px 17px 19px 13px round 58px)
     }
 
     .queens--cards__text--subtitle {
-        font-size: 60px;
+        font-size: 46px;
         margin: 40px;
     }
 }
@@ -481,13 +524,13 @@
         padding: 340px 33% 350px 30%;
     }
 
-    .queens--hero__top--text--subtitle {
+    .queens--hero__top--title {
         font-size: 48px;
         padding: 0px 350px;
         margin-bottom: 50px;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 120px;
     }
 
@@ -495,7 +538,7 @@
         padding: 60px 0px;
     }
 
-    .queens--banner__text {
+    .queens--banner__description--text {
         font-size: 22px;
     }
 
@@ -505,10 +548,10 @@
     }
 
     .queens--cards {
-        margin: 40px 0px  95px 0px;
+        margin: 40px 0px 95px 0px;
     }
 
-    .queens--cards__container--video--queens--img {
+    .queens--cards__queens--video {
         width: 300px !important;
         height: auto !important;
         object-fit: contain;
@@ -516,6 +559,7 @@
     }
 
     .queens--cards__text--subtitle {
+        order: 2;
         font-size: 48px;
         margin: 40px;
     }
@@ -527,13 +571,13 @@
         padding: 340px 33% 350px 30%;
     }
 
-    .queens--hero__top--text--subtitle {
+    .queens--hero__top--title {
         font-size: 56px;
         padding: 0px 350px;
         margin-bottom: 50px;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 144px;
     }
 
@@ -541,20 +585,24 @@
         padding: 60px 0px;
     }
 
-    .queens--banner__text {
-        font-size: 16px;
+    .queens--banner__description--text {
+        font-size: 23px;
     }
 
+
+    .queens--cards__container {
+        order: 1;
+    }
     .queens--text__content {
         font-size: 40px;
         padding: 55px 90px 20px 90px;
     }
 
     .queens--cards {
-        margin: 40px 0px  95px 0px;
+        margin: 40px 0px 95px 0px;
     }
 
-    .queens--cards__container--video--queens--img {
+    .queens--cards__queens--video {
         width: 450px !important;
         height: auto !important;
         object-fit: contain;
@@ -562,7 +610,7 @@
     }
 
     .queens--cards__text--subtitle {
-        font-size: 75px;
+        font-size: 56px;
         margin: 40px 60px 40px 60px;
     }
 }
@@ -573,13 +621,13 @@
         padding: 340px 33% 350px 30%;
     }
 
-    .queens--hero__top--text--subtitle {
+    .queens--hero__top--title {
         font-size: 72px;
         padding: 0px 350px;
         margin-bottom: 50px;
     }
 
-    .queens--banner__title {
+    .queens--banner__header--title {
         font-size: 180px;
     }
 
@@ -587,8 +635,8 @@
         padding: 60px 0px;
     }
 
-    .queens--banner__text {
-        font-size: 16px;
+    .queens--banner__description--text {
+        font-size: 24px;
     }
 
     .queens--text__content {
@@ -597,10 +645,10 @@
     }
 
     .queens--cards {
-        margin: 40px 0px  95px 0px;
+        margin: 40px 0px 95px 0px;
     }
 
-    .queens--cards__container--video--queens--img {
+    .queens--cards__queens--video {
         width: 600px !important;
         height: auto !important;
         object-fit: contain;
@@ -608,14 +656,14 @@
     }
 
     .queens--cards__text--subtitle {
-        font-size: 90px;
+        font-size: 72px;
         margin: 40px 60px 40px 60px;
     }
 }
 
 /* --------------------------Animations.-------------------------- */
 
-@keyframes queens--banner__button {
+@keyframes queens--banner__actions--button {
     0% {
         transform: scale3d(1, 1, 1);
     }
