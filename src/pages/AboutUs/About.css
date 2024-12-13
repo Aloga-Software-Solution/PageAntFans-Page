@@ -60,6 +60,7 @@
 .about--banner__content--title {
     color: #ffffff;
     font-size: 120px;
+    font-family: "Abhaya Libre", serif;
 }
 
 .about--content {
@@ -121,6 +122,13 @@
 }
 
 .about--ceo__content--img {
+    width: 500px;
+    object-fit: cover;
+    object-position: 50% 5%;
+}
+.about--ceo__content--img--co {
+    width: 500px;
+    height: auto;
     width: 35%;
     object-fit: cover;
     object-position: 50% 5%;
@@ -229,7 +237,13 @@
 
     .about--ceo__content--img {
         width: 100%;
-        height: 200px;
+        height: auto;
+        object-position: 50% 30%;
+    }
+
+    .about--ceo__content--img--co {
+        width: 100%;
+        height: 250px;
     }
 
     .about--information {
@@ -267,6 +281,7 @@
 
     .about--card {
         padding: 24px;
+        width: 80%;
     }
 
     .about--card__img {
@@ -318,6 +333,15 @@
         padding: 24px;
         font-size: 32px;
     }
+    .about--ceo__content--img {
+        width: 100%;
+        height: auto;
+    }
+    .about--ceo__content--img--co {
+        width: 100%;
+        height: 300px;
+
+    }
 }
 
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
@@ -340,20 +364,26 @@
     }
 
     .about--card {
-        width: 100%;
+        width: 80%;
     }
 
     .about--ceo__content--img {
         width: 100%;
-        height: 250px;
+        height: auto;
+    }
+
+    .about--ceo__content--img--co {
+        width: 100%;
+        height: 400px;
+        object-position: 50% 15%;
     }
 
     .about--card__award {
         padding-top: 24px;
         justify-content: space-between;
         align-items: center;
-        margin: 0 55px;
         flex-direction: column;
+        width: 100%;
     }
 
     .about--content__ceo--subtitle {
@@ -367,12 +397,7 @@
 }
 
 /* tablet, landscape iPad, lo-res laptops and desktops */
-@media (min-width: 801px) {
-    .about--ceo__content--img {
-        width: 100%;
-        height: 300px;
-    }
-
+@media (min-width: 800px) {
     .about--card__content--title,
     .about--information__title,
     .about--information__industry,
@@ -394,6 +419,59 @@
     .about--banner__content--title {
         font-size: 84px;
     }
+
+    .about--card__award {
+        display: flex; 
+        align-items: flex-start;  
+        justify-content:  space-between; 
+        flex-direction: row;
+        padding: 20px 20px;
+    }
+
+    .about--card__img {
+        width: 30%;
+        padding: 4px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about--card__content {
+        text-align: left;  
+        max-width: 60%;
+        padding: 4px;
+        margin-top: auto;
+        margin-bottom: auto; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about--card__content--title{
+        text-align: left;
+    }
+
+    .about--ceo__content--img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about--ceo__content--img--co {
+        object-position: 40% 15%;
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (min-width: 860px) {
+    .about--card__content {
+        margin-top: 15px;  
+    }
+}
+@media (min-width: 940px) {
+    .about--card__content {
+        margin-top: 35px;  
+    }
 }
 
 /* big landscape tablets, laptops, and desktops */
@@ -402,28 +480,6 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-    }
-
-    .about--card {
-        width: 85%;
-    }
-
-    .about--banner__content--title {
-        font-size: 96px;
-    }
-
-    .about--ceo__content--img {
-        width: 45%;
-        height: auto;
-    }
-
-    .about--content__ceo {
-        width: 100%;
-    }
-
-    .about--card__content {
-        padding: 50px 90px;
-        text-align: left;
     }
 
     .about--ceo {
@@ -437,7 +493,6 @@
 
     .about--card {
         width: 90%;
-        height: 500px;
     }
 
     .about--content__ceo--subtitle {
@@ -458,6 +513,33 @@
     .about--card__content {
         padding: 0 90px 24px;
     }
+
+    .about--card__award {
+        margin: 0 55px;
+        padding: 20px 20px;
+        height: 300px;
+    }
+
+    .about--card__img {
+        width: 30%;
+        padding: 4px;
+    }
+
+    .about--card__content { 
+        max-width: 60%;
+        padding: 4px;
+    }
+
+    .about--ceo__content--img {
+        width: 290px;
+        height: auto;
+    }
+
+    .about--ceo__content--img--co {
+        object-position: 40% 15%;
+        width: 290px;
+        height: auto;
+    }
 }
 
 /* hi-res laptops and desktops */
@@ -467,7 +549,12 @@
     }
 
     .about--ceo__content--img {
-        width: 40%;
+        width: 420px;
+        height: 580px;
+    }
+    .about--ceo__content--img--co {
+        width: 420px;
+        height: auto;
     }
 
     .about--card__award {
@@ -498,6 +585,28 @@
     .about--card__content--title,
     .about--content__ceo--name {
         font-size: 44px;
+    }
+
+    .about--card {
+        width: 89%;
+    }
+
+    .about--card__award {
+        margin: 0 5%;
+        padding: 20px 20px;
+        height: 350px;
+    }
+
+    .about--card__img {
+        width: 300px;
+        padding: 4px;
+    }
+
+    .about--card__content {
+        max-width: 60%;
+        padding: 4px; 
+        margin-top: auto;
+        margin-bottom: auto;
     }
 }
 
@@ -533,6 +642,35 @@
     .about--information__industry {
         font-size: 56px;
     }
+
+    .about--card {
+        width: 87%;
+    }
+
+    .about--card__award { 
+        margin: 0 1%;
+        padding: 20px 20px;
+        height: 450px;
+    }
+
+    .about--card__img {
+        width: 400px;
+        padding: 4px;
+    }
+
+    .about--card__content {
+        max-width: 60%;
+        padding: 4px;
+    }
+
+    .about--ceo__content--img {
+        width: 420px;
+        height: 580px;
+    }
+    .about--ceo__content--img--co {
+        width: 420px;
+        height: auto;
+    }
 }
 
 @media (min-width: 3840px) {
@@ -552,5 +690,25 @@
     .about--content__ceo--content,
     .about--card__content--description {
         font-size: 24px;
+    }
+
+    .about--card {
+        width: 87%;
+    }
+
+    .about--card__award {
+        margin: 0 1%;
+        padding: 20px 20px;
+        height: 450px;
+    }
+
+    .about--card__img {
+        width: 400px;
+        padding: 4px;
+    }
+
+    .about--card__content {  
+        max-width: 60%;
+        padding: 4px;  
     }
 }

@@ -48,7 +48,7 @@ function About() {
                 <h3 className="about--content__ceo--subtitle">Co-Founder</h3>
                 <p className="about--content__ceo--content">Lance Goodman is Co-Founder of PageantFans™ and is responsible for product development, operations and go to market strategy for the company. Goodman is also Co-Founder at SPINTEL, a CEO/Managing Partner at AmeriCoin Capital GP, LLC, and President at Premier Development Partners, and has vast experience in business intelligence, blockchain, digital assets, commercial development, payment processing, software development, and luxury experiences. Lance's educational background includes a degree in Entrepreneurship from Middle Tennessee State University and attendance at the University of Tennessee. </p>
               </div>
-              <img src={AboutLance} className='about--ceo__content--img' />
+              <img src={AboutLance} className='about--ceo__content--img--co' />
             </div>
           </div>
           <h2 className="about--information__industry">Industry recognition</h2>
